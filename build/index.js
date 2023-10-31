@@ -49,7 +49,7 @@ function selectLevel(event, level) {
     console.log(levelFilter);
 }
 (_a = document.getElementById("loadSpells")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", function () {
-    fetch('../spells.json')
+    fetch('https://raw.githubusercontent.com/alterot/spellbook-ts/main/spells.json')
         .then(function (response) {
         if (!response.ok) {
             throw new Error("HTTP error " + response.status);
